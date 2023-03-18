@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home/Jobs</title>
+    <link rel="stylesheet" href="/static/navfooter.css">
+    <link rel="stylesheet" href="/static/jobs.css">
+    <script src="https://kit.fontawesome.com/d0890909e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="logoContainer">
+        <label class="logo" onclick="location.href='/index.html'">
+          <h1><span style="color: #6787FE;font-style: italic;">Smart</span>Hire</h1>
+        </label>
+    </div>
+    <div class="nav-option">
+        <ul class="nav-list" type="none">
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#"> Get Certified</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="dropdown" onmouseover="changearrow();"  onmouseout="changearrow1();">
+        <div style="position: relative;"><input type="button" class="dropdown-btn" value="My Account">
+            <i class="fa-solid fa-caret-down i1"></i><i class="fa-solid fa-sort-up i2 none"></i></i></div>
+        <!--<button class="dropbtn">Dropdown <i class="fa-solid fa-caret-down"></i></button>-->
+        <div class="dropdown-content">
+          <a href="#">Profile</a>
+          <a href="#">logout</a>
+        </div>
+    </div>
+  </header>
+  <section class="main-section" id="ms-1">
+      <!--<div style="background-image: url(http://utouchdesign.com/themes/envato/escort/assets/img/single_page_header.png); padding-bottom: 50px;">-->
+      <div style="padding-bottom: 50px;background-image: url(/static/img/breadcrumb-bg.jpg);background-size: cover;background-repeat: no-repeat;">
+      <h1 class="heading">Find your <span style="color: #6787FE;">new job</span> today</h1>
+      <h3 class="sub-heading">Thousands of job in computer science and technology sector are waiting for you</h3>
+      <div class="search-job-ms"><input type="text" placeholder="What position are you looking for ?" name="" id=""><input type="text" placeholder="Location" name="" id=""> <input type="button" value="Search job"></div>
+      </div>
+      <div class="job-description">
+        <div class="job-description-filter">
+          <h1 class="filter-heading">Filters</h1>
+          <div class="filter-container">
+            <h2>location</h2>
+            <hr>
+            <h6><input type="radio" name="Location" id="Mumbai">Mumbai</h6>
+            <h6><input type="radio" name="Location" id="Hyderabad"> Hyderabad</h6>
+            <h6><input type="radio" name="Location" id="Bangalore"> Bangalore</h6>
+            <h6><input type="radio" name="Location" id="Gurugram"> Gurugram</h6>
+          </div>
+          <div class="filter-container">
+            <h2>Job types</h2>
+            <hr>
+            <h6><input type="radio" name="Job-type" id="Full-time"> Full-time</h6>
+            <h6><input type="radio" name="Job-type" id="Part-time"> Part-time</h6>
+            <h6><input type="radio" name="Job-type" id="Remote"> Remote</h6>
+            <h6><input type="radio" name="Job-type" id="Intern"> Intern</h6>
+            <h6><input type="radio" name="Job-type" id="Freelancer"> Freelancer</h6>
+            <h6><input type="radio" name="Job-type" id="Contract Base"> Contract Base</h6>
+          </div>
+          <div class="filter-container">
+            <h2>Experience</h2>
+            <hr>
+            <h6><input type="radio" name="Experience" id="O years-2 years"> O years-2 years</h6>
+            <h6><input type="radio" name="Experience" id="2 years-5 years"> 2 years-5 years</h6>
+            <h6><input type="radio" name="Experience" id="5 years-10 years"> 5 years-10 years</h6>
+            <h6><input type="radio" name="Experience" id="more than 1O years"> more than 1O years</h6>
+          </div>
+          <div class="filter-container">
+            <h2>Offered Salary</h2>
+            <hr>
+            <h6><input type="radio" name="Salary" id="Mumbai"> Under $10,000</h6>
+            <h6><input type="radio" name="Salary" id="Hyderabad"> $10,000 - $15,000</h6>
+            <h6><input type="radio" name="Salary" id="Bangalore"> $15,000 - $20,000</h6>
+            <h6><input type="radio" name="Salary" id="Gurugram"> $20,000 - $30,000</h6>
+            <h6><input type="radio" name="Salary" id="Gurugram">  $30,000 - $40,000</h6>
+          </div>
+          
+        </div>
+        <div class="job-description-detail">
+          <div class="space-between">
+          <h1 class="no-of-jobs">24 Jobs </h1>
+          
+        </div>
+        <div class="job-display-containers">
+          <div class="job-container" onclick="rundetails(1);">
+            <div>
+              <img src="https://img.icons8.com/fluency/96/null/meta.png"/>
+            </div>
+            <div>
+              <h2>Meta </h2>
+              <h1>Software Engineer</h1>
+              <ul type="none">
+                <li><i class="fa-solid fa-location-dot"></i>Hyderabad</li>
+                <li><i class="fa-solid fa-clock"></i> Full time</li>
+                <li><i class="fa-solid fa-indian-rupee-sign"></i>1-1.5L</li>
+                <li><i class="fa-regular fa-calendar"></i> 1 day ago</li>
+              </ul>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima facere, numquam maiores quam unde eum saepe? Tempore cupiditate expedita qui.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- NEWSLETTER -->
+
+    <section class="footer">
+      <ul class="footer-list">
+        <li style="width: 400px;display: flex;flex-flow: wrap;justify-content: flex-start;margin-top: -15px;">
+          <ul>
+          <li>
+          <img src="../img/logoz.png" alt="" class="footerImage">
+          <h1 class="nav-logo"><span style="color: #6787FE;font-style: italic;">Smart</span>Hire</h1>
+          </li>
+          <li class="ppp"><p>The Easiest Way to Get Your New Job</p></li></ul>
+        </li>
+        <li>
+          <ul>
+            <li class="li-heading"><span>Useful Links</span></li>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer"> Your Account</a></li>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer"> About Us</a></li>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer"> Jobs</a></li>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer"> testimonials</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li class="li-heading"><span>Company</span></li>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer"> Privacy Policy</a></li>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer"> Courses</a></li>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer"> Placements</a></li>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer"> help</a></li>
+          </ul>
+        </li>
+        <li style="margin-bottom: 70px;">
+          <ul>
+            <li class="li-heading"><span>Contact Us</span></li>
+            <li class="nav-cn"><i class="fa-solid fa-house fa-sm"></i>Mumbai-400050</li>
+            <li class="nav-cn"><i class="fa-solid fa-phone fa-sm"></i>7712345673</li>
+            <li class="brands-logo nav-cn" style="margin-top: 5px;"><i class="fa-brands fa-twitter fa-lg"></i><i
+                class="fa-brands fa-facebook-f fa-lg"></i><i class="fa-brands fa-instagram fa-lg"></i><i
+                class="fa-solid fa-envelope fa-lg ls"></i></li>
+          </ul>
+        </li>
+      </ul>
+      <hr>
+      <h1 class="footer-credit">© Copyright 2023 SmartHire Designed by HEVC </a></h1>
+    </section>
+</body>
+<!-- <script src="/static/jobs.js"></script> -->
+<script src="/static/navfooter.js"></script>
+</html>
