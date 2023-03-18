@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/navfooter.css">
+    <link rel="stylesheet" href="static/aboutus.css">
+    <script src="https://kit.fontawesome.com/d0890909e1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logoContainer">
+            <label class="logo" onclick="location.href='/index.html'">
+                <h1><span style="color: #6787FE;font-style: italic;">Smart</span>Hire</h1>
+            </label>
+        </div>
+        <div class="nav-option">
+            <ul class="nav-list" type="none">
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#"> Get Certified</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="dropdown" onmouseover="changearrow();" onmouseout="changearrow1();">
+            <div style="position: relative;"><input type="button" class="dropdown-btn" value="My Account">
+                <i class="fa-solid fa-caret-down i1"></i><i class="fa-solid fa-sort-up i2 none"></i></i>
+            </div>
+            <!--<button class="dropbtn">Dropdown <i class="fa-solid fa-caret-down"></i></button>-->
+            <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">logout</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- sub HEADER -->
+
+    <div class="subHeader" style="background-image: url(static/img/breadcrumb-bg.jpg);">
+        <h1>Contact Us</h1>
+        <p>Home >> Contact Us
+        <p>
+    </div>
+    <div class="aboutusform">
+        <form action="#" class="abtus">
+            <div class="field" >
+                <input type="text" placeholder="Name" required>
+
+                
+            </div>
+            <div class="field">
+                <input type="text" placeholder="Email" required>
+            </div>
+            <div class="field">
+                <input type="text" placeholder="Subject" required>
+            </div>
+            <div class="field" id="messagebox">
+                <input type="text" placeholder="Message" required>
+            </div>
+            <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.9833476337562!2d72.83367151455059!3d19.064469757289736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c91130392c07%3A0x3c47bf391c8de931!2sThadomal%20Shahani%20Engineering%20College!5e0!3m2!1sen!2sin!4v1679137026765!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    
+
+<!-- 
+    <section class="main-section" style="background-color: #F4F5F7; height: 500px;">
+        <br>
+        <br>
+        <br>
+    </section>
+     -->
+
+    <!-- NEWSLETTER -->
+<!-- 
+    <div class="NewsLetter" style="background-image: url(/static/img/breadcrumb-bg.jpg);">
+        <div class="formContainer">
+            <h1>Subscribe Our Newsletter!</h1>
+            <h4>Join our subscribers list to get latest news, update about new jobs opening and special offer delivered
+                straight to your inbox</h4>
+            <form action="post" class="nsForm">
+                <input type="email" placeholder="Enter your email" class="email">
+                <input type="button" value="SUBSCRIBE" class="nsbtn">
+            </form>
+        </div>
+    </div> -->
+
+
+    <!-- FOOTER -->
+
+    <section class="footer">
+        <ul class="footer-list">
+            <li style="width: 400px;display: flex;flex-flow: wrap;justify-content: flex-start;margin-top: -15px;">
+                <ul>
+                    <li>
+                        <img src="../img/logoz.png" alt="" class="footerImage">
+                        <h1 class="nav-logo"><span style="color: #6787FE;font-style: italic;">Smart</span>Hire</h1>
+                    </li>
+                    <li class="ppp">
+                        <p>The Easiest Way to Get Your New Job</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li class="li-heading"><span>Useful Links</span></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> Your Account</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> About Us</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> Jobs</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> testimonials</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li class="li-heading"><span>Company</span></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> Privacy Policy</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> Courses</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> Placements</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> help</a></li>
+                </ul>
+            </li>
+            <li style="margin-bottom: 70px;">
+                <ul>
+                    <li class="li-heading"><span>Contact Us</span></li>
+                    <li class="nav-cn"><i class="fa-solid fa-house fa-sm"></i>Mumbai-400050</li>
+                    <li class="nav-cn"><i class="fa-solid fa-phone fa-sm"></i>7712345673</li>
+                    <li class="brands-logo nav-cn" style="margin-top: 5px;"><i class="fa-brands fa-twitter fa-lg"></i><i
+                            class="fa-brands fa-facebook-f fa-lg"></i><i class="fa-brands fa-instagram fa-lg"></i><i
+                            class="fa-solid fa-envelope fa-lg ls"></i></li>
+                </ul>
+            </li>
+        </ul>
+        <hr>
+        <h1 class="footer-credit">© Copyright 2023 SmartHire Designed by HEVC </a></h1>
+    </section>
+</body>
+<script src="/static/navfooter.js"></script>
+
+</html>
