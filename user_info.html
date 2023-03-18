@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/navfooter.css">
+    <link rel="stylesheet" href="/static/user_infostyle.css">
+    <script src="https://kit.fontawesome.com/d0890909e1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logoContainer">
+            <label class="logo" onclick="location.href='/index.html'">
+                <h1><span style="color: #6787FE;font-style: italic;">Smart</span>Hire</h1>
+            </label>
+        </div>
+        <div class="nav-option">
+            <ul class="nav-list" type="none">
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#"> Get Certified</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="dropdown" onmouseover="changearrow();" onmouseout="changearrow1();">
+            <div style="position: relative;"><input type="button" class="dropdown-btn" value="My Account">
+                <i class="fa-solid fa-caret-down i1"></i><i class="fa-solid fa-sort-up i2 none"></i></i>
+            </div>
+            <!--<button class="dropbtn">Dropdown <i class="fa-solid fa-caret-down"></i></button>-->
+            <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">logout</a>
+            </div>
+        </div>
+    </header>
+
+
+    
+<section class="main-section-container">
+    <form action="/user_info" method="POST">
+        <div class="containers">
+            <h1>General Information</h1>
+            <div class="information">
+                <div class="flex-container">
+                    <h6>Name<br> <input value="{{query.name}}" type="text" name="name" id="name" placeholder="Name">
+                    </h6>
+                    <h6>Email<br> <input value="{{query.email}}" type="text" name="email" id="email"
+                            placeholder="email"></h6>
+                    <h6>Phone Number<br> <input value="{{query.phone}}" type="text" name="phone" id="phone"
+                            placeholder="Phone Number">
+                    </h6>
+                </div>
+                <div class="flex-container">
+                    <h6>Gender<br> <input type="text" value="{{query.gender}}" name="gender" id="gender"
+                            placeholder="Male/Female"></h6>
+                    <h6>City<br> <input type="text" value="{{query.city}}" name="city" id="city" placeholder="City">
+                    </h6>
+                    <h6>Pincode<br> <input type="text" value="{{query.pincode}}" name="pincode" id="pincode"
+                            placeholder="Pincode"></h6>
+                </div>
+                <div class="flex-container">
+                    <h6>Age<br> <input value="{{query.age}}" type="text" name="age" id="age" placeholder="Age"></h6>
+                    <h6>Profession<br> <input value="{{query.profession}}" type="text" name="profession" id="profession"
+                            placeholder="Profession"></h6>
+                    <h6>Profile Photo<br><input value="{{query.photo}}" type="text" name="photo" id="photo"
+                            placeholder="URL for Photo"></h6>
+                </div>
+                <!-- <div class="flex-container mb10">
+                    <h6>Job Type<br> <input type="text" name="Employment Type" id="Employment Type"
+                            placeholder="Job type"></h6>
+                    <h6>Work Level<br> <input type="text" name="Work Level" id="WorkLevel" placeholder="Work Level">
+                    </h6>
+                    <h6>Last Date<br> <input type="text" name="Last date" id="Lastdate" placeholder="Last Date">
+                    </h6>
+                </div>
+                <div class="flex-container textareacontainer">
+                    <h6>Job Description<br> <textarea name="Job Description" id="jd" cols="30" rows="10"></textarea>
+                    </h6>
+                </div> -->
+            </div>
+        </div>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</section>
+
+
+    <!-- NEWSLETTER -->
+
+    <div class="NewsLetter" style="background-image: url(/static/img/breadcrumb-bg.jpg);">
+        <div class="formContainer">
+            <h1>Subscribe Our Newsletter!</h1>
+            <h4>Join our subscribers list to get latest news, update about new jobs opening and special offer delivered
+                straight to your inbox</h4>
+            <form action="post" class="nsForm">
+                <input type="email" placeholder="Enter your email" class="email">
+                <input type="button" value="SUBSCRIBE" class="nsbtn">
+            </form>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <section class="footer">
+        <ul class="footer-list">
+            <li style="width: 400px;display: flex;flex-flow: wrap;justify-content: flex-start;margin-top: -15px;">
+                <ul>
+                    <li>
+                        <img src="../img/logoz.png" alt="" class="footerImage">
+                        <h1 class="nav-logo"><span style="color: #6787FE;font-style: italic;">Smart</span>Hire</h1>
+                    </li>
+                    <li class="ppp">
+                        <p>The Easiest Way to Get Your New Job</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li class="li-heading"><span>Useful Links</span></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> Your Account</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> About Us</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> Jobs</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> testimonials</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li class="li-heading"><span>Company</span></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> Privacy Policy</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> Courses</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> Placements</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> help</a></li>
+                </ul>
+            </li>
+            <li style="margin-bottom: 70px;">
+                <ul>
+                    <li class="li-heading"><span>Contact Us</span></li>
+                    <li class="nav-cn"><i class="fa-solid fa-house fa-sm"></i>Mumbai-400050</li>
+                    <li class="nav-cn"><i class="fa-solid fa-phone fa-sm"></i>7712345673</li>
+                    <li class="brands-logo nav-cn" style="margin-top: 5px;"><i class="fa-brands fa-twitter fa-lg"></i><i
+                            class="fa-brands fa-facebook-f fa-lg"></i><i class="fa-brands fa-instagram fa-lg"></i><i
+                            class="fa-solid fa-envelope fa-lg ls"></i></li>
+                </ul>
+            </li>
+        </ul>
+        <hr>
+        <h1 class="footer-credit">© Copyright 2023 SmartHire Designed by HEVC </a></h1>
+    </section>
+</body>
+<script src="/static/navfooter.js"></script>
+<script>
+    let i = 2;
+    function addcompany() {
+
+        const company = document.querySelector(".add-job-containers");
+        company.innerHTML += `<div class="flex-container">
+                        <h6>${i++}. Company Name <br> <input type="text" name="Company Name" id="Company Name"
+                                placeholder="Company Name"></h6>
+                        <h6>Position<br> <input type="text" name="Position" id="Position"
+                                placeholder="Position"></h6>
+                        <h6>Duration<br> <input type="text" name="Duration" id="Duration"
+                                placeholder="Duration"></h6>
+                    </div>
+        `
+    }
+</script>
+</html>
+
+
+
+
+
+
+

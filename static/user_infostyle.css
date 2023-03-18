@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F4F5F7;
+}
+
+#BECCFE
+
+/* SUB HEADER */
+
+img {
+    max-width: fit-content;
+}
+
+.subHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    height: 180px;
+    background-image: url(../img/subHeader.png);
+}
+
+.subHeader p {
+    font-weight: 600;
+}
+
+.main-section-container {
+    margin: 100px 0;
+}
+
+.containers {
+    margin: 50px 150px;
+    padding-bottom: 40px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.containers h1 {
+    background-color: #BECCFE;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    border-radius: 5px 5px 0 0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.flex-container h6 {
+    color: rgb(112, 127, 140);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.flex-container input {
+    border: 2px solid #e7e8e8;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 15px;
+    width: 340px;
+    outline: none;
+    color: rgb(112, 127, 140);
+    border-radius: 5px;
+}
+
+.flex-container input:hover {
+    border-color: #BECCFE;
+    border-width: 2px;
+    outline: none;
+}
+
+.flex-container input::placeholder {
+    color: #bec3c3;
+}
+
+.textareacontainer textarea {
+    width: 1130px;
+    height: 60px;
+    border: 2px solid #e7e8e8;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    color: rgb(112, 127, 140);
+}
+
+.textareacontainer textarea:hover {
+    border-color: #BECCFE;
+    border-width: 2px;
+    outline: none;
+}
+
+.textareacontainer textarea::placeholder {
+    color: #bec3c3;
+}
+
+.main-section-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #6787FE;
+    color: white;
+    border: 1px solid #6787FE;
+    padding: 8px 0;
+    width: 1220px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.main-section-container button:hover {
+    background-color: white;
+    color: #6787FE;
+}
+
+.logo-link {
+    justify-content: flex-start;
+    margin-left: 30px;
+}
+
+.logo-link input {
+    width: 1130px;
+}
+
+.add-job {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    margin: auto;
+    font-size: 20px;
+    color: #6787FE;
+    width: 34px;
+    border: 1px solid rgb(112, 127, 140);
+    background-color: #BECCFE;
+}
