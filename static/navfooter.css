@@ -8,6 +8,7 @@ html {
 }
 
 header{
+    background-color: #fff;
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: space-between;

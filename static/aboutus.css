@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,500&display=swap');
-*{
+
+* {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
@@ -24,6 +25,7 @@ html {
     font-weight: 600;
 }
 
+<<<<<<< Updated upstream
 .aboutusform{
     display: flex;
     width: 100%;
@@ -136,3 +138,77 @@ form .btn input[type="submit"] {
     font-weight: 500;
     cursor: pointer;
 }
+=======
+
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 100px 50px 100px;
+    gap: 100px;
+}
+
+.container1 {
+    display: flex;
+    gap: 50px;
+    height: 450px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+    height: 550px;
+}
+
+.lc1 {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ctitle {
+    font-size: 45px;
+    font-weight: 650;
+}
+
+.rc1 {
+    width: 45;
+}
+
+.button button {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #26ae61;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.button button:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #26ae61;
+    border: 2px solid #26ae61;
+}
+
+.bothmainc {
+    display: flex;
+    flex-direction: column;
+}
+
+.profilecontainer {
+    height: 750px;
+    /* background-color: #6787FE; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(img/bg3.png);
+    /* background-image: url(../Image/bg.jpg); */
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+
+}
+>>>>>>> Stashed changes
