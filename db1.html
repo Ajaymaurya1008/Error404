@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="/static/navfooter.css">
+    <link rel="stylesheet" href="/static/db1.css">
+    <script src="https://kit.fontawesome.com/d0890909e1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logoContainer">
+            <label class="logo" onclick="location.href='/index.html'">
+                <h1><span style="color: #6787FE;font-style: italic;">Smart</span>Hire</h1>
+            </label>
+        </div>
+        <div class="nav-option">
+            <ul class="nav-list" type="none">
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#"> Get Certified</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="dropdown" onmouseover="changearrow();" onmouseout="changearrow1();">
+            <div style="position: relative;"><input type="button" class="dropdown-btn" value="My Account">
+                <i class="fa-solid fa-caret-down i1"></i><i class="fa-solid fa-sort-up i2 none"></i></i>
+            </div>
+            <!--<button class="dropbtn">Dropdown <i class="fa-solid fa-caret-down"></i></button>-->
+            <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">logout</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- DASHBOARD -->
+
+
+
+    <div class="maincontainer">
+        <div class="leftcontainer">
+            <div class="imagecontainer">
+                <img src="/static/img/user-profile.png" alt="">
+            </div>
+            <div class="userdetails">
+                <div class="featureTitle">
+                    <p>User Info</p>
+                </div>
+                <div class="detailcontainer">
+                    <div class="detail">
+                        <div class="ticon"><i class="fa-solid fa-signature"></i></div>
+                        <input type="text" class="textfeild" placeholder="Sujal Gandhi">
+                    </div>
+                    <div class="detail">
+                        <div class="ticon"><i class="fa-solid fa-pager"></i></div>
+                        <input type="text" class="textfeild" placeholder="26">
+                    </div>
+                    <div class="detail">
+                        <div class="ticon"><i class="fa-solid fa-envelope"></i></div>
+                        <input type="text" class="textfeild" placeholder="sujal.415@xyz.in">
+                    </div>
+                    <div class="detail">
+                        <div class="ticon"><i class="fa-solid fa-mars-stroke-right"></i></div>
+                        <input type="text" class="textfeild" placeholder="Male">
+                    </div>
+                    <div class="detail">
+                        <div class="ticon"><i class="fa-solid fa-phone"></i></div>
+                        <input type="text" class="textfeild" placeholder="7798452169">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="rightcontainer">
+            <div class="featurecontainer">
+
+                <div class="feature" id="1">
+                    <div class="featureTitle">
+                        <p>Applied Jobs</p>
+                    </div>
+                    <div class="featuredetails" onclick="window.location.href='#'">
+                        <div class="iconcontainer">
+                            <i class="fa-solid fa-suitcase"></i>
+                        </div>
+                    </div>
+                    <div class="nojobs"></div>
+                </div>
+                <div class="feature" id="2">
+                    <div class="featureTitle">
+                        <p>View Resume</p>
+                    </div>
+                    <div class="featuredetails" onclick="window.location.href='#'">
+                        <div class="iconcontainer">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                    </div>
+                    <div class="nojobs"></div>
+                </div>
+                <div class="feature" id="3">
+                    <div class="featureTitle">
+                        <p>Courses</p>
+                    </div>
+                    <div class="featuredetails" onclick="window.location.href='#'">
+                        <div class="iconcontainer">
+                            <i class="fa-solid fa-desktop"></i>
+                        </div></a>
+                    </div>
+                    <div class="nojobs"></div>
+                </div>
+                <div class="feature" id="4">
+                    <div class="featureTitle">
+                        <p>Find a Job</p>
+                    </div>
+                    <div class="featuredetails" onclick="window.location.href='#'">
+                        <div class="iconcontainer">
+                            <i class="fa-solid fa-rectangle-list"></i>
+                        </div></a>
+                    </div>
+                    <div class="nojobs"></div>
+                </div>
+                <div class="feature" id="5">
+                    <div class="featureTitle">
+                        <p>Upload Resume</p>
+                    </div>
+                    <div class="featuredetails" onclick="window.location.href='#'">
+                        <div class="iconcontainer">
+                            <i class="fa-solid fa-file-circle-plus"></i>
+                        </div></a>
+                    </div>
+                    <div class="nojobs"></div>
+                </div>
+                <div class="feature" id="6">
+                    <div class="featureTitle">
+                        <p>BootCamp</p>
+                    </div>
+                    <div class="featuredetails" onclick="window.location.href='#'">
+                        <div class="iconcontainer">
+                            <i class="fa-solid fa-suitcase"></i>
+                        </div>
+                    </div>
+                    <div class="nojobs"></div>
+                </div>
+                <!-- <div class="feature" id="6">
+                    <div class="featureTitle">
+                        <p>Applied Jobs</p>
+                    </div>
+                    <div class="featuredetails" onclick="window.location.href='#'">
+                        <div class="iconcontainer">
+                            <i class="fa-solid fa-suitcase"></i>
+                        </div>
+                    </div>
+                    <div class="nojobs"></div>
+                </div>
+                <div class="feature" id="6">
+                    <div class="featureTitle">
+                        <p>Applied Jobs</p>
+                    </div>
+                    <div class="featuredetails" onclick="window.location.href='#'">
+                        <div class="iconcontainer">
+                            <i class="fa-solid fa-suitcase"></i>
+                        </div>
+                    </div>
+                    <div class="nojobs"></div>
+                </div>
+                <div class="feature" id="6">
+                    <div class="featureTitle">
+                        <p>Applied Jobs</p>
+                    </div>
+                    <div class="featuredetails" onclick="window.location.href='#'">
+                        <div class="iconcontainer">
+                            <i class="fa-solid fa-suitcase"></i>
+                        </div>
+                    </div>
+                    <div class="nojobs"></div>
+                </div>
+ -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- NEWSLETTER -->
+
+    <div class="NewsLetter" style="background-image: url(/static/img/breadcrumb-bg.jpg);">
+        <div class="formContainer">
+            <h1>Subscribe Our Newsletter!</h1>
+            <h4>Join our subscribers list to get latest news, update about new jobs opening and special offer delivered
+                straight to your inbox</h4>
+            <form action="post" class="nsForm">
+                <input type="email" placeholder="Enter your email" class="email">
+                <input type="button" value="SUBSCRIBE" class="nsbtn">
+            </form>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <section class="footer">
+        <ul class="footer-list">
+            <li style="width: 400px;display: flex;flex-flow: wrap;justify-content: flex-start;margin-top: -15px;">
+                <ul>
+                    <li>
+                        <img src="../img/logoz.png" alt="" class="footerImage">
+                        <h1 class="nav-logo"><span style="color: #6787FE;font-style: italic;">Smart</span>Hire</h1>
+                    </li>
+                    <li class="ppp">
+                        <p>The Easiest Way to Get Your New Job</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li class="li-heading"><span>Useful Links</span></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> Your Account</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> About Us</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> Jobs</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> testimonials</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li class="li-heading"><span>Company</span></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> Privacy Policy</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> Courses</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> Placements</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> help</a></li>
+                </ul>
+            </li>
+            <li style="margin-bottom: 70px;">
+                <ul>
+                    <li class="li-heading"><span>Contact Us</span></li>
+                    <li class="nav-cn"><i class="fa-solid fa-house fa-sm"></i>Mumbai-400050</li>
+                    <li class="nav-cn"><i class="fa-solid fa-phone fa-sm"></i>7712345673</li>
+                    <li class="brands-logo nav-cn" style="margin-top: 5px;"><i class="fa-brands fa-twitter fa-lg"></i><i
+                            class="fa-brands fa-facebook-f fa-lg"></i><i class="fa-brands fa-instagram fa-lg"></i><i
+                            class="fa-solid fa-envelope fa-lg ls"></i></li>
+                </ul>
+            </li>
+        </ul>
+        <hr>
+        <h1 class="footer-credit">© Copyright 2023 SmartHire Designed by HEVC </a></h1>
+    </section>
+</body>
+<script src="/static/navfooter.js"></script>
+
+</html>

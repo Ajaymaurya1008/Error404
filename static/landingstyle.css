@@ -264,7 +264,6 @@ header {
     height:655px;
     background-color: #f4f5f7;
     border-radius: 5px;
-    margin-bottom: 100px;
 }
 
 .job-container {
@@ -343,7 +342,7 @@ header {
     border: none;
     border-radius: 10px;
     height: 40px;
-    padding: 0 10px 0 10px;
+    padding: 0 12px 0 12px;
 }
 
 .exploretbtn input:hover {
@@ -354,14 +353,14 @@ header {
 }
 
 
-/* Numbers */
-
-
 /* Courses */
 
 .tcoursecontainer{
     display: flex;
     flex-direction: column;
+    margin: 0 120px 100px 120px;
+    background-color: #f4f5f7;
+    height:620px;
 }
 
 .coursecontainers {
@@ -370,11 +369,20 @@ header {
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
-    background-color: #f4f5f7;
-    margin: 0 120px 100px 120px;
-    height:550px
-
+    margin-top: 30px;
 }
+
+.jtitle {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    background-color: #6787fe;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
 .star{
     color: rgb(243,181,25);
     grid-area: 10px;
@@ -442,6 +450,49 @@ header {
     border: 1px solid #6787FE;
     color: #6787FE;
     cursor: pointer;
+}
+
+
+/* Numbers */
+
+.numcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.gg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #b3ffd4;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.content i{
+    font-size: 40px;
+}
+
+.content h1{
+
+}
+
+.content p{
+    color: #4a6375;
+    font-family: rubik,Sans-serif;
+    font-weight: 100;
 }
 
 
