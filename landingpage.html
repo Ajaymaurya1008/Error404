@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="/static/navfooter.css">
+    <link rel="stylesheet" href="landingstyle.css">
+    <script src="https://kit.fontawesome.com/d0890909e1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logoContainer">
+            <label class="logo" onclick="location.href='#'">
+                <h1><span style="color: #6787FE;font-style: italic;">Smart</span>Hire</h1>
+            </label>
+        </div>
+        <div class="nav-option">
+            <ul class="nav-list" type="none">
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#"> Get Certified</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="dropdown" onmouseover="changearrow();" onmouseout="changearrow1();">
+            <div style="position: relative;"><input type="button" class="dropdown-btn" value="My Account">
+                <i class="fa-solid fa-caret-down i1"></i><i class="fa-solid fa-sort-up i2 none"></i></i>
+            </div>
+            <!--<button class="dropbtn">Dropdown <i class="fa-solid fa-caret-down"></i></button>-->
+            <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">logout</a>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="allcontainer">
+
+        <!-- Hero Page -->
+
+        <div class="herocontainer" style="background-image: url(/static/img/hero.jpg);">
+            <div class="herocontent">
+                <div class="title1">
+                    <p>Join us & Explore <br> Thousands of Jobs</p>
+                </div>
+                <div class="title2">
+                    Work with talented people by joining us <br> to get the most out of your time and cost
+                </div>
+                <div class="explorebtn">
+                    <input type="button" value="Get Started" onClick="location.href='/login.html'">
+                </div>
+            </div>
+        </div>
+
+        <!-- Highlighted features -->
+
+        <div class="featurecontainer">
+            <div class="feature">
+                <img src="/static/img/f2.jpg" alt="">
+                <h1>Reliable Analytics</h1>
+                <p>It allows you to study the properties of measurement scales and the items that compose the scales.
+                    The
+                    Reliability Analysis procedure calculates a number of commonly used measures of scale reliability
+                </p>
+            </div>
+            <div class="feature">
+                <img src="/static/img/f1.jpg" alt="">
+                <h1>Data Secured</h1>
+                <p>It allows you to study the properties of measurement scales and the items that compose the scales.
+                    The
+                    Reliability Analysis procedure calculates a number of commonly used measures of scale reliability
+                </p>
+            </div>
+            <div class="feature">
+                <img src="/static/img/f3.jpg" alt="">
+                <h1>Dual Feedback</h1>
+                <p>It allows you to study the properties of measurement scales and the items that compose the scales.
+                    The
+                    Reliability Analysis procedure calculates a number of commonly used measures of scale reliability
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Trending jobs -->
+
+        <div class="trendingjobs">
+            <div class="jtitle">
+                <p>Trending Jobs</p>
+            </div>
+            <div class="job-display-containers">
+                <div class="job-container" onclick="rundetails(1);">
+                    <div>
+                        <img src="https://img.icons8.com/fluency/96/null/meta.png" />
+                    </div>
+                    <div>
+                        <h2>Meta </h2>
+                        <h1>Software Engineer</h1>
+                        <ul type="none">
+                            <li><i class="fa-solid fa-location-dot"></i>Hyderabad</li>
+                            <li><i class="fa-solid fa-clock"></i> Full time</li>
+                            <li><i class="fa-solid fa-indian-rupee-sign"></i>1-1.5L</li>
+                            <li><i class="fa-regular fa-calendar"></i> 1 day ago</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima facere, numquam maiores
+                            quam unde eum saepe? Tempore cupiditate expedita qui.</p>
+                    </div>
+                </div>
+                <div class="job-container" onclick="rundetails(1);">
+                    <div>
+                        <img src="/static/img/companyLogo-whitebg.jpg" />
+                    </div>
+                    <div>
+                        <h2>BetterMind</h2>
+                        <h1>UI Designer</h1>
+                        <ul type="none">
+                            <li><i class="fa-solid fa-location-dot"></i>Mumbai</li>
+                            <li><i class="fa-solid fa-clock"></i> Full time</li>
+                            <li><i class="fa-solid fa-indian-rupee-sign"></i>80K</li>
+                            <li><i class="fa-regular fa-calendar"></i> 20 day ago</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima facere, numquam maiores
+                            quam unde eum saepe? Tempore cupiditate expedita qui.</p>
+                    </div>
+                </div>
+                <div class="job-container" onclick="rundetails(1);">
+                    <div>
+                        <img src="/static/img/micro.png" />
+                    </div>
+                    <div>
+                        <h2>Microsoft</h2>
+                        <h1>Data Scientist</h1>
+                        <ul type="none">
+                            <li><i class="fa-solid fa-location-dot"></i>Bangalore</li>
+                            <li><i class="fa-solid fa-clock"></i> Full time</li>
+                            <li><i class="fa-solid fa-indian-rupee-sign"></i>2L</li>
+                            <li><i class="fa-regular fa-calendar"></i> 25 day ago</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima facere, numquam maiores
+                            quam unde eum saepe? Tempore cupiditate expedita qui.</p>
+                    </div>
+                </div>
+                <div class="exploretbtn">
+                    <input type="button" value="View All" onClick="location.href='/jobs.html'">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Numbers -->
+
+
+        <!-- Courses -->
+
+        <div class="tcoursecontainer">
+            <div class="jtitle">
+                <p>Top Courses</p>
+            </div>
+            <div class="coursecontainers">
+                <div class="course" id="c1">
+                    <div class="courseimage">
+                        <img src="/static/img/illustration-1.png" style="width: 100%;" alt="">
+                    </div>
+                    <div class="courseinfo">
+                        <div class="courseTitle">
+                            <h3>Data Entry</h3>
+                        </div>
+                        <div class="courseDuration">
+                            <div class="gp">
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <i class="fa-regular fa-clock cl" style="margin-right: 5px;"></i>
+                            </div>29 hrs
+                        </div>
+                        <div class="courseTutor">
+                            <img src="/static/img/mpp.svg" alt=""><span style="padding-top: 3px;"> By Sarthak Tanpure</span>
+                        </div>
+                        <div class="enroll">
+                            <a href="/coursedetails2.html"><button>Enroll Course</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course" id="c2">
+                    <div class="courseimage">
+                        <img src="/static/img/illustration-2.png" alt="">
+                    </div>
+                    <div class="courseinfo">
+                        <div class="courseTitle">
+                            <h3>The Web Development</h3>
+                        </div>
+                        <div class="courseDuration">
+                            <div class="gp">
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <i class="fa-regular fa-clock cl" style="margin-right: 5px;"></i>
+                            </div>32 hrs
+                        </div>
+                        <div class="courseTutor">
+                            <img src="/static/img/mpp.svg" alt=""> By Arun Kulkarni
+                        </div>
+                        <div class="enroll">
+                            <a href="/coursedetails.html"><button>Enroll Course</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course" id="c3">
+                    <div class="courseimage">
+                        <img src="/static/img/illustration-3.png" alt="">
+                    </div>
+                    <div class="courseinfo">
+                        <div class="courseTitle">
+                            <h3>Python:Beginner friendly course</h3>
+                        </div>
+                        <div class="courseDuration">
+                            <div class="gp">
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <i class="fa-regular fa-clock cl" style="margin-right: 5px;"></i>
+                            </div>21 hrs
+                        </div>
+                        <div class="courseTutor">
+                            <img src="/static/img/fpp.svg" alt=""> By Mehar Gandhi
+                        </div>
+                        <div class="enroll">
+                            <a href="#"><button>Enroll Course</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+            <!-- Companies -->
+
+
+            <!-- blog/fillers -->
+
+
+        </div>
+
+
+        <!-- NEWSLETTER -->
+
+        <div class="NewsLetter" style="background-image: url(/static/img/breadcrumb-bg.jpg);">
+            <div class="formContainer">
+                <h1>Subscribe Our Newsletter!</h1>
+                <h4>Join our subscribers list to get latest news, update about new jobs opening and special offer
+                    delivered
+                    straight to your inbox</h4>
+                <form action="post" class="nsForm">
+                    <input type="email" placeholder="Enter your email" class="email">
+                    <input type="button" value="SUBSCRIBE" class="nsbtn">
+                </form>
+            </div>
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <section class="footer">
+            <ul class="footer-list">
+                <li style="width: 400px;display: flex;flex-flow: wrap;justify-content: flex-start;margin-top: -15px;">
+                    <ul>
+                        <li>
+                            <img src="../img/logoz.png" alt="" class="footerImage">
+                            <h1 class="nav-logo"><span style="color: #6787FE;font-style: italic;">Smart</span>Hire</h1>
+                        </li>
+                        <li class="ppp">
+                            <p>The Easiest Way to Get Your New Job</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="li-heading"><span>Useful Links</span></li>
+                        <li><a href="http://" target="_blank" rel="noopener noreferrer"> Your Account</a></li>
+                        <li><a href="http://" target="_blank" rel="noopener noreferrer"> About Us</a></li>
+                        <li><a href="http://" target="_blank" rel="noopener noreferrer"> Jobs</a></li>
+                        <li><a href="http://" target="_blank" rel="noopener noreferrer"> testimonials</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="li-heading"><span>Company</span></li>
+                        <li><a href="http://" target="_blank" rel="noopener noreferrer"> Privacy Policy</a></li>
+                        <li><a href="http://" target="_blank" rel="noopener noreferrer"> Courses</a></li>
+                        <li><a href="http://" target="_blank" rel="noopener noreferrer"> Placements</a></li>
+                        <li><a href="http://" target="_blank" rel="noopener noreferrer"> help</a></li>
+                    </ul>
+                </li>
+                <li style="margin-bottom: 70px;">
+                    <ul>
+                        <li class="li-heading"><span>Contact Us</span></li>
+                        <li class="nav-cn"><i class="fa-solid fa-house fa-sm"></i>Mumbai-400050</li>
+                        <li class="nav-cn"><i class="fa-solid fa-phone fa-sm"></i>7712345673</li>
+                        <li class="brands-logo nav-cn" style="margin-top: 5px;"><i
+                                class="fa-brands fa-twitter fa-lg"></i><i class="fa-brands fa-facebook-f fa-lg"></i><i
+                                class="fa-brands fa-instagram fa-lg"></i><i class="fa-solid fa-envelope fa-lg ls"></i>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <hr>
+            <h1 class="footer-credit">© Copyright 2023 SmartHire Designed by HEVC </a></h1>
+        </section>
+</body>
+<script src="/static/navfooter.js"></script>
+
+</html>
