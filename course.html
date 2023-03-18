@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses</title>
+  <link rel="stylesheet" href="/static/coursestyle.css">
+  <link rel="stylesheet" href="/static/navfooter.css">
+  <script src="https://kit.fontawesome.com/d0890909e1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logoContainer">
+        <label class="logo" onclick="location.href='/index.html'">
+          <h1><span style="color: #6787FE;font-style: italic;">Smart</span>Hire</h1>
+        </label>
+    </div>
+    <div class="nav-option">
+        <ul class="nav-list" type="none">
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#"> Get Certified</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="dropdown" onmouseover="changearrow();"  onmouseout="changearrow1();">
+        <div style="position: relative;"><input type="button" class="dropdown-btn" value="My Account">
+            <i class="fa-solid fa-caret-down i1"></i><i class="fa-solid fa-sort-up i2 none"></i></i></div>
+        <!--<button class="dropbtn">Dropdown <i class="fa-solid fa-caret-down"></i></button>-->
+        <div class="dropdown-content">
+          <a href="#">Profile</a>
+          <a href="#">logout</a>
+        </div>
+    </div>
+</header>
+
+  <!-- SubHeader -->
+
+  <div class="subHeader" style="background-image: url(/static/img/breadcrumb-bg.jpg);background-size: cover;background-repeat: no-repeat;">
+    <h1>Courses</h1>
+    <p>Home >> Courses <p>
+  </div>
+
+  <!-- MAIN CONTAINER -->
+
+  <div class="mainContainer">
+    <!-- <div class="leftContainer">
+      <div class="search" style="display: flex;">
+        <div class="searchicon" style="padding: 8px;"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="textfeild"><input type="text" placeholder="Search here"></div>
+      </div>
+      <div class="category">
+        <h1>Category</h1>
+        <p><input class="lg" type="checkbox">Business</p>
+        <p><input class="lg" type="checkbox">Design</p>
+        <p><input class="lg" type="checkbox">Development</p>
+        <p><input class="lg" type="checkbox">Heath & Fitness</p>
+        <p><input class="lg" type="checkbox">Marketing</p>
+        <p><input class="lg" type="checkbox">Math</p>
+        <p><input class="lg" type="checkbox">Photography</p>
+      </div>
+      <div class="level">
+        <h1>Levels</h1>
+        <p><input class="lg" type="checkbox">All Levels</p>
+        <p><input class="lg" type="checkbox">Beginner</p>
+        <p><input class="lg" type="checkbox">Intermediate</p>
+        <p><input class="lg" type="checkbox">Expert</p>
+      </div>
+      <div class="clrBtn">
+        <a href="#"><button>Clear all filters</button></a>
+      </div>
+    </div> --><!-- 
+    <div class="rightContainer">
+      <div class="sort">
+        <select name="arrange">
+          <option>Release Date (newest first)</option>
+          <option>Release Date (oldest first</option>
+          <option>Course Title (a-z)</option>
+          <option>Course Title (a-z)</option>
+        </select>
+      </div> -->
+    <div class="coursecontainers">
+      <div class="course" id="c1">
+        <div class="courseimage">
+          <img src="/static/img/illustration-1.png" style="width: 100%;" alt="">
+        </div>
+        <div class="courseinfo">
+          <div class="courseTitle">
+            <h3>Data Entry</h3>
+          </div>
+          <div class="courseDuration">
+            <div class="gp">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <i class="fa-regular fa-clock cl" style="margin-right: 5px;"></i></div>29 hrs
+          </div>
+          <div class="courseTutor">
+            <img src="/static/img/mpp.svg" alt=""><span style="padding-top: 3px;"> By Sarthak Tanpure</span>
+          </div>
+          <div class="enroll">
+            <a href="/coursedetails2.html"><button>Enroll Course</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="course" id="c2">
+        <div class="courseimage">
+          <img src="/static/img/illustration-2.png" alt="">
+        </div>
+        <div class="courseinfo">
+          <div class="courseTitle">
+            <h3>The Web Development</h3>
+          </div>
+          <div class="courseDuration">
+            <div class="gp">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <i class="fa-regular fa-clock cl" style="margin-right: 5px;"></i></div>32 hrs
+          </div>
+          <div class="courseTutor">
+            <img src="/static/img/mpp.svg" alt=""> By Arun Kulkarni
+          </div>
+          <div class="enroll">
+            <a href="/coursedetails.html"><button>Enroll Course</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="course" id="c3">
+        <div class="courseimage">
+          <img src="/static/img/illustration-3.png" alt="">
+        </div>
+        <div class="courseinfo">
+          <div class="courseTitle">
+            <h3>Python:Beginner friendly course</h3>
+          </div>
+          <div class="courseDuration">
+            <div class="gp">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <i class="fa-regular fa-clock cl" style="margin-right: 5px;"></i></div>21 hrs
+          </div>
+          <div class="courseTutor">
+            <img src="/static/img/fpp.svg" alt=""> By Mehar Gandhi
+          </div>
+          <div class="enroll">
+            <a href="#"><button>Enroll Course</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="course" id="c4">
+        <div class="courseimage">
+          <img src="/static/img/illustration-4.png" alt="">
+        </div>
+        <div class="courseinfo">
+          <div class="courseTitle">
+            <h3>Complete 3D Modelling</h3>
+          </div>
+          <div class="courseDuration">
+            <div class="gp">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <i class="fa-regular fa-clock cl" style="margin-right: 5px;"></i></div>31 hrs
+          </div>
+          <div class="courseTutor">
+            <img src="/static/img/mpp.svg" alt=""> By Sanam Malhotra
+          </div>
+          <div class="enroll">
+            <a href="#"><button>Enroll Course</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="course" id="c5">
+        <div class="courseimage">
+          <img src="/static/img/illustration-5.jpg" alt="">
+        </div>
+        <div class="courseinfo">
+          <div class="courseTitle">
+            <h3>Technical Writing Immersion</h3>
+          </div>
+          <div class="courseDuration">
+            <div class="gp">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <i class="fa-regular fa-clock cl" style="margin-right: 5px;"></i></div>14 hrs
+          </div>
+          <div class="courseTutor">
+            <img src="/static/img/fpp.svg" alt=""> By Aisha Zubair
+          </div>
+          <div class="enroll">
+            <a href="#"><button>Enroll Course</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="course" id="c6">
+        <div class="courseimage">
+          <img src="/static/img/illustration-6.png" alt="">
+        </div>
+        <div class="courseinfo">
+          <div class="courseTitle">
+            <h3>C/C++Programing</h3>
+          </div>
+          <div class="courseDuration">
+            <div class="gp">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <i class="fa-regular fa-clock cl" style="margin-right: 5px;"></i></div>18 hrs
+          </div>
+          <div class="courseTutor">
+            <img src="/static/img/mpp.svg" alt=""> By Sumil Suthar
+          </div>
+          <div class="enroll">
+            <a href="#"><button>Enroll Course</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="course" id="c7">
+        <div class="courseimage">
+          <img src="/static/img/illustration-7.png" alt="">
+        </div>
+        <div class="courseinfo">
+          <div class="courseTitle">
+            <h3>Market segmentation</h3>
+          </div>
+          <div class="courseDuration">
+            <div class="gp">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <i class="fa-regular fa-clock cl" style="margin-right: 5px;"></i></div>19 hrs
+          </div>
+          <div class="courseTutor">
+            <img src="/static/img/fpp.svg" alt=""> By Riya Agrawal
+          </div>
+          <div class="enroll">
+            <a href="#"><button>Enroll Course</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="course" id="c8">
+        <div class="courseimage">
+          <img src="/static/img/illustration-8.png" alt="">
+        </div>
+        <div class="courseinfo">
+          <div class="courseTitle">
+            <h3>UI/UX Design Essential</h3>
+          </div>
+          <div class="courseDuration">
+            <div class="gp">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <i class="fa-regular fa-clock cl" style="margin-right: 5px;"></i></div>11 hrs
+          </div>
+          <div class="courseTutor">
+            <img src="/static/img/mpp.svg" alt=""> By Ajay Maurya
+          </div>
+          <div class="enroll">
+            <a href="#"><button>Enroll Course</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="course" id="c9">
+        <div class="courseimage">
+          <img src="/static/img/illustration-2.png" alt="">
+        </div>
+        <div class="courseinfo">
+          <div class="courseTitle">
+            <h3>Graphic designer</h3>
+          </div>
+          <div class="courseDuration">
+            <div class="gp">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <i class="fa-regular fa-clock cl" style="margin-right: 5px;"></i></div>24 hrs
+          </div>
+          <div class="courseTutor">
+            <img src="/static/img/fpp.svg" alt=""> By Zabina Shaikh
+          </div>
+          <div class="enroll">
+            <a href="#"><button>Enroll Course</button></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+  <div class="NewsLetter" style="background-image: url(/static/img/breadcrumb-bg.jpg);">
+    <div class="formContainer">
+      <h1>Subscribe Our Newsletter!</h1>
+      <h4>Join our subscribers list to get latest news, update about new jobs opening and special offer delivered straight  to your inbox</h4>
+      <form action="post" class="nsForm">
+        <input type="email" placeholder="Enter your email" class="email">
+        <input type="button" value="SUBSCRIBE" class="nsbtn" style="top: 34px;left: 810px;">
+      </form>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <section class="footer">
+    <ul class="footer-list">
+      <li style="width: 400px;display: flex;flex-flow: wrap;justify-content: flex-start;margin-top: -15px;">
+        <ul>
+        <li>
+        <img src="../img/logoz.png" alt="" class="footerImage">
+        <h1 class="nav-logo"><span style="color: #6787FE;font-style: italic;">Smart</span>Hire</h1>
+        </li>
+        <li class="ppp"><p>The Easiest Way to Get Your New Job</p></li></ul>
+      </li>
+      <li>
+        <ul>
+          <li class="li-heading"><span>Useful Links</span></li>
+          <li><a href="http://" target="_blank" rel="noopener noreferrer"> Your Account</a></li>
+          <li><a href="http://" target="_blank" rel="noopener noreferrer"> About Us</a></li>
+          <li><a href="http://" target="_blank" rel="noopener noreferrer"> Jobs</a></li>
+          <li><a href="http://" target="_blank" rel="noopener noreferrer"> testimonials</a></li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li class="li-heading"><span>Company</span></li>
+          <li><a href="http://" target="_blank" rel="noopener noreferrer"> Privacy Policy</a></li>
+          <li><a href="http://" target="_blank" rel="noopener noreferrer"> Courses</a></li>
+          <li><a href="http://" target="_blank" rel="noopener noreferrer"> Placements</a></li>
+          <li><a href="http://" target="_blank" rel="noopener noreferrer"> help</a></li>
+        </ul>
+      </li>
+      <li style="margin-bottom: 70px;">
+        <ul>
+          <li class="li-heading"><span>Contact Us</span></li>
+          <li class="nav-cn"><i class="fa-solid fa-house fa-sm"></i>Mumbai-400050</li>
+          <li class="nav-cn"><i class="fa-solid fa-phone fa-sm"></i>7712345673</li>
+          <li class="brands-logo nav-cn" style="margin-top: 5px;"><i class="fa-brands fa-twitter fa-lg"></i><i
+              class="fa-brands fa-facebook-f fa-lg"></i><i class="fa-brands fa-instagram fa-lg"></i><i
+              class="fa-solid fa-envelope fa-lg ls"></i></li>
+        </ul>
+      </li>
+    </ul>
+    <hr>
+    <h1 class="footer-credit">© Copyright 2023 SmartHire Designed by HEVC </a></h1>
+  </section>
+</body>
+<script src="./index.js"></script>
+
+</html>
