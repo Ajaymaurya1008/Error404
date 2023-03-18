@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+}
+
+.course-header{
+    position: relative;
+    background-color: #F4F5F7;
+    padding: 50px;
+}
+.course-header p{
+    font-size: 17px;
+    font-weight: 400;
+}
+.course-header p a{
+    color: black;
+    padding: 0 5px;
+    text-decoration: none;
+}
+.course-header h1{
+    font-size: 35px;
+    font-weight: 600;
+    padding: 20px 0 20px 5px;
+}
+.course-header h5{
+    font-size: 18px;
+    font-weight: 400;
+    width: 60%;
+}
+.views{
+    padding-top: 20px;
+}
+.intro{
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    right: 50px;
+    top: 110px;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 15%) ;
+    padding: 0 0 15px;
+    border: 1px solid rgb(0 0 0 / 15%);
+}
+.intro iframe{
+    padding: 10px;
+}
+.intro p{
+    font-size: 18px;
+    margin-left: 15px;
+    padding: 5px 0;
+}
+.intro li{
+    font-size: 16px;
+    padding: 5px;
+}
+.intro ul{
+    padding-left: 25px;
+}
+.intro i{
+    margin-right: 10px;
+}
+.seperate-box{
+    display: flex;
+
+}
+.container-lecture-list{
+    padding: 50px 30px 50px 50px;
+    width: 53%;
+}
+.tutor-intro{
+    height: 200px;
+    background-color: aqua;
+    width: 40%;
+    margin-top: 400px;
+}
+.container-lecture-list h1{
+    font-weight: 500;
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+.container-lecture-list a{
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 20px;
+    font-weight: 400;
+}
+.container-lecture-list ul{
+    padding: 0;
+}
+.container-lecture-list li{
+    border: 1px solid black;
+    margin: 20px 0;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+.fade-in{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+.fade-in.appear{
+    opacity: 1;
+}
+.left{
+    transform: translateX(-50%);
+}
+.right{
+    transform: translateX(50%);
+}
+.left,.right{
+    transition:transform 400ms ease-in;
+}
+.left.appear,.right.appear{
+    transform: translateX(0);
+}
+.youtube-overlay-side{
+    position: fixed;
+    inset: 0;
+    background-color:  rgba(0,0,0,0.6);
+}
+.video iframe{
+    margin: 130px 70px 20px 50px;
+}
+.video.hidden{
+    display: none;
+}
+.video i{
+    position: absolute;
+    font-size: 30px;
+    margin-top: 80px;
+    margin-left: 80px;
+    background-color: #F4F5F7;
+    border-radius: 50%;
+    padding: 2px 5px;
+}
+.comments{
+    padding: 0 50px ;
+}
+.home-desc{
+    display: none;
+    visibility: hidden;
+}
+#no_comments,#hcb_settings{
+    display: none;
+    visibility: hidden;
+}
+#hcb_subscribe{
+    visibility: hidden;
+}
+.hcb-icon{
+    visibility: hidden;
+}
