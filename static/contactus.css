@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,500&display=swap');
-*{
+
+* {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
@@ -24,20 +25,22 @@ html {
     font-weight: 600;
 }
 
-.aboutusform{
+.aboutusform {
     display: flex;
     width: 100%;
     align-items: center;
-    padding: 5% ;
+    padding: 5%;
     gap: 20px;
 }
-.abtus{
+
+.abtus {
     width: 45%;
     margin: 0 40px 0 0;
     border: transparent;
     border-radius: 20px;
-   
+
 }
+
 .form-container .aboutusform {
     display: flex;
     width: 200%;
@@ -84,11 +87,11 @@ form .field input:focus::placeholder {
     margin-top: 5px;
 }
 
-#messagebox{
+#messagebox {
     height: 150px;
 }
 
-.map{
+.map {
     width: 50%;
     float: right;
     margin-right: 10%;
@@ -135,4 +138,10 @@ form .btn input[type="submit"] {
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
+}
+
+form .btn input[type="submit"]:hover{
+    background-color: #fff;
+    border: 1px solid #6787FE;
+    color: #6787FE;
 }
