@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="/static/navfooter.css">
+    <link rel="stylesheet" href="/static/user_profile.css">
+    <script src="https://kit.fontawesome.com/d0890909e1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logoContainer">
+            <label class="logo" onclick="location.href='/index.html'">
+                <h1><span style="color: #6787FE;font-style: italic;">Smart</span>Hire</h1>
+            </label>
+        </div>
+        <div class="nav-option">
+            <ul class="nav-list" type="none">
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#"> Get Certified</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="dropdown" onmouseover="changearrow();" onmouseout="changearrow1();">
+            <div style="position: relative;"><input type="button" class="dropdown-btn" value="My Account">
+                <i class="fa-solid fa-caret-down i1"></i><i class="fa-solid fa-sort-up i2 none"></i></i>
+            </div>
+            <!--<button class="dropbtn">Dropdown <i class="fa-solid fa-caret-down"></i></button>-->
+            <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">logout</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SUBHEADER -->
+
+    <div class="subHeader" style="background-image: url(static/img/breadcrumb-bg.jpg);">
+        <h1>User Profile</h1>
+        <p>Home >> Application</p>
+    </div>
+
+
+    <!-- USER PROFILE -->
+
+    <div class="maincontainer">
+        <div class="basiccontainer">
+            <div class="ppp">
+                <div class="pf">
+                    <img src="/static/img/userprofileimg.webp" alt="">
+                </div>
+                <div class="dt">
+                    <h1>Neharika Tolani</h1>
+                    <h2>Web Developer</h2>
+                    <p><i class="fa-solid fa-location-dot"></i>South Bombay</p>
+                </div>
+            </div>
+            <div class="dr">
+                <input type="button" value="View Resume">
+                <input type="button" value="Download Resume">
+            </div>
+        </div>
+        <div class="left_right">
+            <div class="left">
+                <div class="about">
+                    <div class="title">
+                        <h1>About Me</h1>
+                    </div>
+                    <div class="desc">
+                        <p>My primary role is to design, develop, and maintain websites and web applications. This
+                            involves
+                            using a combination of programming languages, such as HTML, CSS, JavaScript, and PHP, to
+                            create functional and visually appealing websites that meet the needs of clients or
+                            end-users.Proficiency in HTML, CSS, and JavaScript: These are the fundamental building
+                            blocks of any website, and web developers must be proficient in these programming languages
+                            to create responsive and functional websites. <br><br> Proficiency in HTML, CSS, and
+                            JavaScript: These are the fundamental building
+                            blocks of any website, and web developers must be proficient in these programming languages
+                            to create responsive and functional websites</p>
+                    </div>
+                </div>
+                <div class="education">
+                    <div class="title">
+                        <h1>Education</h1>
+                    </div>
+                    <div class="desc">
+                        <p> <ul>
+                            <li>Btech from IIT Kanpur in 2016</li>
+                            <li>Mechanical Engineering</li>
+                            <li>Overall 9.6 CGPA</li>
+                            <li>Higher Secondary Education from Jai Hind</li>
+                            <li>Acheived 94%</li>
+                            <li>SSC from Royal Academy</li>
+                            <li>ACheived 90%</li>
+                        </ul></p>
+                    </div>
+                </div>
+                <div class="workexp">
+                    <div class="title">
+                        <h1>Work Experience</h1>
+                    </div>
+                    <div class="desc">
+                        <p>My primary role is to design, develop, and maintain websites and web applications. This
+                            involves
+                            using a combination of programming languages, such as HTML, CSS, JavaScript, and PHP, to
+                            create functional and visually appealing websites that meet the needs of clients or
+                            end-users.Proficiency in HTML, CSS, and JavaScript: These are the fundamental building
+                            blocks of any website, and web developers must be proficient in these programming languages
+                            to create responsive and functional websites. <br><br> Proficiency in HTML, CSS, and
+                            JavaScript: These are the fundamental building
+                            blocks of any website, and web developers must be proficient in these programming languages
+                            to create responsive and functional websites</p>
+                    </div>
+                </div>
+                <div class="skills"></div>
+            </div>
+            <div class="right">
+                <div class="information">
+                    <div class="infotitle">
+                        <h1>Information</h1>
+                    </div>
+                    <div class="allinfo">
+                        <div class="info1">
+                            <h5>Category</h5>
+                            <h4>:</h4>
+                            <h6>Development</h6>
+                        </div>
+                        <div class="info1">
+                            <h5>Offered Salary</h5>
+                            <h4>:</h4>
+                            <h6>50000/Monthly</h6>
+                        </div>
+                        <div class="info1">
+                            <h5>Experience</h5>
+                            <h4>:</h4>
+                            <h6>05 Years</h6>
+                        </div>
+                        <div class="info1">
+                            <h5>Language</h5>
+                            <h4>:</h4>
+                            <h6>English, Germany</h6>
+                        </div>
+                        <div class="info1">
+                            <h5>Age</h5>
+                            <h4>:</h4>
+                            <h6>27 Years</h6>
+                        </div>
+                        <div class="info1">
+                            <h5>Gender</h5>
+                            <h4>:</h4>
+                            <h6>Female</h6>
+                        </div>
+                        <div class="info1">
+                            <h5>Qualification</h5>
+                            <h4>:</h4>
+                            <h6>Btech </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="stitle">
+                        Professional Skills
+                    </div>
+                    <div class="listt">
+                        <ul>
+                            <li>Web application Design</li>
+                            <li>User Interface (UI) design</li>
+                            <li> Mobile Application Design</li>
+                            <li>Landing Page Design</li>
+                            <li>Web Interface Design</li>
+                            <li>Interaction Design</li>
+                            <li>User Experience</li>
+                            <li>Graphic Design</li>
+                            <li>Branding & Identity</li>
+                            <li>Project Planning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- NEWSLETTER -->
+
+    <div class="NewsLetter" style="background-image: url(/static/img/breadcrumb-bg.jpg);">
+        <div class="formContainer">
+            <h1>Subscribe Our Newsletter!</h1>
+            <h4>Join our subscribers list to get latest news, update about new jobs opening and special offer delivered
+                straight to your inbox</h4>
+            <form action="post" class="nsForm">
+                <input type="email" placeholder="Enter your email" class="email">
+                <input type="button" value="SUBSCRIBE" class="nsbtn">
+            </form>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <section class="footer">
+        <ul class="footer-list">
+            <li style="width: 400px;display: flex;flex-flow: wrap;justify-content: flex-start;margin-top: -15px;">
+                <ul>
+                    <li>
+                        <img src="../img/logoz.png" alt="" class="footerImage">
+                        <h1 class="nav-logo"><span style="color: #6787FE;font-style: italic;">Smart</span>Hire</h1>
+                    </li>
+                    <li class="ppp">
+                        <p>The Easiest Way to Get Your New Job</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li class="li-heading"><span>Useful Links</span></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> Your Account</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> About Us</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> Jobs</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> testimonials</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li class="li-heading"><span>Company</span></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> Privacy Policy</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> Courses</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> Placements</a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"> help</a></li>
+                </ul>
+            </li>
+            <li style="margin-bottom: 70px;">
+                <ul>
+                    <li class="li-heading"><span>Contact Us</span></li>
+                    <li class="nav-cn"><i class="fa-solid fa-house fa-sm"></i>Mumbai-400050</li>
+                    <li class="nav-cn"><i class="fa-solid fa-phone fa-sm"></i>7712345673</li>
+                    <li class="brands-logo nav-cn" style="margin-top: 5px;"><i class="fa-brands fa-twitter fa-lg"></i><i
+                            class="fa-brands fa-facebook-f fa-lg"></i><i class="fa-brands fa-instagram fa-lg"></i><i
+                            class="fa-solid fa-envelope fa-lg ls"></i></li>
+                </ul>
+            </li>
+        </ul>
+        <hr>
+        <h1 class="footer-credit">© Copyright 2023 SmartHire Designed by HEVC </a></h1>
+    </section>
+</body>
+<script src="/static/navfooter.js"></script>
+
+</html>
