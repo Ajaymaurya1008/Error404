@@ -111,6 +111,7 @@ html {
 }
 
 .titlecontainer p{
+    overflow: hidden;
     font-size: 20px;
     font-weight: 500;
 }
@@ -130,13 +131,14 @@ html {
 .dev{
     height: 410px;
     width: 270px;
-    border: 1px solid #ffffff;
+    color: black;
     background-color: #ffffff;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    transition: 0.5s;
 }
 
 .dev img{
@@ -171,13 +173,28 @@ html {
     margin-right: 40px;
 }
 
-.social_id a{
+/* i{
     color: black;
-    transition: 0.3s;
+    transition: 0.2s;
+} */
+
+i:hover{
+    color: #983AD8;
+} 
+
+.dev:hover{
+    background-color: #181717;
+    color: white;
+    border: none;
 }
 
-.social_id a:hover{
-    color: blueviolet;
+.social_id a{
+    color: black;
+}
+
+.dev:hover>.social_id a{
+    color: white;
+    border: none;
 }
 
 
